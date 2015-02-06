@@ -8,16 +8,9 @@
 </head>
 <body>
 
-  <% if user_signed_in? %>
-    <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-  <% else %>
-    <%= link_to "Register", '#' %>
-    |
-    <%= link_to "Sign In", '#' %>
-  <% end %>
+  <%= render partial: 'shared/top_level_navigation' %>
 
-
-  <%= render partial: 'shared/top_level_navigation'  %>
+  <%= render partial: 'shared/sign_in_status' %>
 
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
