@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 
-gem 'rails', '4.1.6'
+gem 'rails'
 gem 'pg'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
@@ -18,6 +18,13 @@ group :development do
   gem 'pry-rescue'
   gem 'quiet_assets'
   gem 'spring'
+  gem 'annotate'
+  gem 'awesome_print'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  # gem 'haml-rails'
+  gem 'quiet_assets'
+  # gem 'thin'
 end
 
 # group :development, :test do
