@@ -3,15 +3,14 @@ source 'https://rubygems.org'
 
 gem 'rails'
 gem 'pg'
+gem 'bootstrap-sass', '~> 3.3.3'
+gem 'autoprefixer-rails'
 gem 'sass-rails', '~> 4.0.3'
 gem 'devise'
 gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-
-
-
 
 
 group :development do
@@ -24,7 +23,6 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   # gem 'haml-rails'
-  gem 'quiet_assets'
   # gem 'thin'
 end
 

@@ -4,7 +4,8 @@
     <p><%= @susu.name %></p>
     <p><%= @susu.total_value %></p>
     <p><%= @susu.created_at %></p>
+    <%= link_to 'Edit', edit_susu_path(@susu) %> |
+    <%= link_to 'Back', susus_path %>
   </div class='susu'>
 
-<%= link_to 'Edit', edit_susu_path(@susu) %> |
-<%= link_to 'Back', susus_path %>
+
