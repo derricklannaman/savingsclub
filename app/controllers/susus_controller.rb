@@ -4,7 +4,7 @@ class SususController < ApplicationController
   respond_to :html
 
   def index
-    redirect_to :dashboard
+    go_to_dashboard
   end
 
   def show
@@ -12,7 +12,7 @@ class SususController < ApplicationController
   end
 
   def new
-    @susu = Susu.new
+    new_susu
     respond_with(@susu)
   end
 
@@ -20,10 +20,10 @@ class SususController < ApplicationController
   end
 
   def create
-    @susu = Susu.new(susu_params)
+    new_susu(susu_params)
     @susu.user_id = user_id
     @susu.save
-    respond_with(@susu)
+    go_to_dashboard
   end
 
   def update
@@ -37,6 +37,11 @@ class SususController < ApplicationController
   end
 
   private
+
+    def new_susu(susu_params=nil)
+      @susu = Susu.new(susu_params)
+    end
+
     def find_susu
       @susu = Susu.find(params[:id])
     end
