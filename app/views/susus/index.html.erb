@@ -9,6 +9,11 @@
 
   <tbody>
     <% @susus.each do |susu| %>
+      <ul>
+        <li><%= susu.name %></li>
+        <li><%= susu.total_value %></li>
+        <li><%= susu.created_at %></li>
+      </ul>
       <tr>
         <td><%= link_to 'Show', susu %></td>
         <td><%= link_to 'Edit', edit_susu_path(susu) %></td>
