@@ -1,2 +1,6 @@
-#brand-bar
-  = link_to "SusuBank", root_path, class: 'logo'
+%nav.navbar.navbar-default
+  .container-fluid
+    #brand-bar
+      = link_to "SusuBank", root_path, id: 'logo'
+
+      = render partial: 'shared/sign_in_status'
