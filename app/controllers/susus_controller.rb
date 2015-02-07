@@ -4,7 +4,7 @@ class SususController < ApplicationController
   respond_to :html
 
   def index
-    @susus = Susu.all
+    @susus = current_user.susus
     respond_with(@susus)
   end
 

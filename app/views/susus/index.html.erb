@@ -9,16 +9,16 @@
 
   <tbody>
     <% @susus.each do |susu| %>
-      <ul>
-        <li><%= susu.name %></li>
-        <li><%= susu.total_value %></li>
-        <li><%= susu.created_at %></li>
-      </ul>
-      <tr>
-        <td><%= link_to 'Show', susu %></td>
-        <td><%= link_to 'Edit', edit_susu_path(susu) %></td>
-        <td><%= link_to 'Destroy', susu, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <div class='susu'>
+        <p><%= susu.name %></p>
+        <p><%= susu.total_value %></p>
+        <p><%= susu.created_at %></p>
+
+        <span><%= link_to 'Show', susu %></span>
+        <span><%= link_to 'Edit', edit_susu_path(susu) %></span>
+        <span><%= link_to 'Destroy', susu, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+      </div>
+
     <% end %>
   </tbody>
 </table>
