@@ -11,7 +11,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-
+gem "haml-rails"
 
 group :development do
   gem 'pry-rails'
@@ -22,7 +22,6 @@ group :development do
   gem 'awesome_print'
   gem 'better_errors'
   gem 'binding_of_caller'
-  # gem 'haml-rails'
   # gem 'thin'
 end
 
@@ -75,7 +74,6 @@ gem 'sdoc', '~> 0.4.0',   group: :doc
 #   gem 'awesome_print'
 #   gem 'better_errors'
 #   gem 'binding_of_caller'
-#   gem 'haml-rails'
 #   gem 'quiet_assets'
 #   gem 'thin'
 # end

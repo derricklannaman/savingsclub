@@ -1,0 +1,13 @@
+%h3 Listing susus
+= link_to 'New Susu', new_susu_path
+%section
+  %div
+    - @susus.each do |susu|
+      .susu
+        %p= susu.name
+        %p= susu.total_value
+        %p= susu.created_at
+        %span= link_to 'Show', susu
+        %span= link_to 'Edit', edit_susu_path(susu)
+        %span= link_to 'Destroy', susu, method: :delete, data: { confirm: 'Are you sure?' }
+%br/

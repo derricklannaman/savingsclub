@@ -1,0 +1,8 @@
+%p#notice= notice
+.susu
+  %p= @susu.name
+  %p= @susu.total_value
+  %p= @susu.created_at
+  = link_to 'Edit', edit_susu_path(@susu)
+  |
+  \#{link_to 'Back', susus_path}
