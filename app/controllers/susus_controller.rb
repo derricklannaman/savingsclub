@@ -4,8 +4,7 @@ class SususController < ApplicationController
   respond_to :html
 
   def index
-    @susus = current_user.susus
-    respond_with(@susus)
+    redirect_to :dashboard
   end
 
   def show
