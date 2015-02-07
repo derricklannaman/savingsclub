@@ -1,0 +1,25 @@
+<%= form_for(@susu) do |f| %>
+  <% if @susu.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@susu.errors.count, "error") %> prohibited this susu from being saved:</h2>
+
+      <ul>
+      <% @susu.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div>
+    <%= f.label :name  %>
+    <%= f.text_field :name, auto_focus: true %>
+  </div>
+  <div>
+    <%= f.label :total_value, "Total Value" %>
+    <%= f.number_field :total_value %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

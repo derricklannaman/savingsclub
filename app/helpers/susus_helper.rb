@@ -1,0 +1,2 @@
+module SususHelper
+end
