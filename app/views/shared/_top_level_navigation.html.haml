@@ -1,6 +1,7 @@
 = render partial: 'shared/brand_bar'
 - if signed_in?
-  = link_to "dashboard", dashboard_path
+  .dashboard-bar
+    = link_to "dashboard", dashboard_path
 - else
   = link_to "About Us", about_path
   = link_to "Learn More", learn_path

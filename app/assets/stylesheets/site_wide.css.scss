@@ -4,15 +4,14 @@ Navigation Area
 ===============
 */
 
+/* Top Level Navigation
+  ====================
+*/
 nav.navbar.navbar-default {
   background-color: #222;
   height: 50px;
   border-bottom: 2px solid #000;
   padding-top: 9px;
-}
-
-.container-fluid {
-   background-color: #222;
 }
 
 a#logo {
@@ -26,4 +25,11 @@ div#sign_in_status {
   font-size: 18px;
   margin-right: 10px;
   color: #FFF;
+}
+/* Dashboard Bar
+  ====================
+*/
+.dashboard-bar {
+  border: 1px solid #F00;
+  height: 65px;
 }
