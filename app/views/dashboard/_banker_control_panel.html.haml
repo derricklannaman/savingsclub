@@ -1,0 +1,12 @@
+.row
+  #banker_control_panel
+    .welcome-box
+      .user-greeting
+        %span.hi Hi,
+        %span.name= "#{current_user.email}"
+      .communication-controls
+        = link_to "Send Text", "#", class: 'com-button'
+        = link_to "Send Email", "#", class: 'com-button'
+
+    .buttons
+      = link_to 'New Susu', new_susu_path

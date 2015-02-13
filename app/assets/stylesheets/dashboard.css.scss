@@ -1,3 +1,28 @@
-// Place all the styles related to the Dashboard controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#banker_control_panel {
+  background-color: rgba(164, 193, 193, 1);
+  height: 230px;
+  .welcome-box {
+    float: left;
+    width: 350px;
+    height: 230px;
+    margin-left: 30px;
+  }
+}
+
+.communication-controls {
+  border-top: 1px solid rgba(119,136,155, .5);
+  height: 80px;
+  position: relative;
+  top: 49px;
+  .com-button {
+    float: left;
+    width: 174px;
+    border-left: 1px solid rgba(119,136,155, .5);
+    height: 80px;
+    color: #FFF;
+    text-shadow: 0px 0px 1px #333;
+    letter-spacing: 2px;
+    font-size: 20px;
+    padding-top: 22px;
+  }
+}
