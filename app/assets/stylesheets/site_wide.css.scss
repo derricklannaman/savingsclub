@@ -30,6 +30,12 @@ div#sign_in_status {
   ====================
 */
 .dashboard-bar {
-  border: 1px solid #F00;
-  height: 65px;
+  border: 1px solid #999;
+  height: 55px;
+}
+
+a#dashboard {
+  font-size: 36px;
+  text-decoration: none;
+  padding-left: 61px;
 }
