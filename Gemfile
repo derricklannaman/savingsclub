@@ -25,18 +25,18 @@ group :development do
   # gem 'thin'
 end
 
-# group :development, :test do
-#   gem "rspec-rails", "~> 3.1.0"
-#   gem "factory_girl_rails", "~> 4.4.1"
-# end
+group :development, :test do
+  gem "rspec-rails"
+  gem "factory_girl_rails", "~> 4.4.1"
+end
 
-# group :test do
-#   gem "faker"
-#   gem "capybara"
-#   gem "database_cleaner"
-#   gem "launchy"
-#   gem "selenium-webdriver"
-# end
+group :test do
+  gem "faker"
+  gem "capybara"
+  gem "database_cleaner"
+  gem "launchy"
+  gem "selenium-webdriver"
+end
 
 group :production do
   gem 'rails_12factor'
