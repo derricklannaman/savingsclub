@@ -1,28 +1,38 @@
 #banker_control_panel {
+  margin: 0 auto;
+  width: 100%;
   background-color: rgba(164, 193, 193, 1);
   height: 230px;
-  .welcome-box {
-    float: left;
-    width: 350px;
-    height: 230px;
-    margin-left: 30px;
+  margin-top: -9px;
+  padding: 10px;
+}
+
+.welcome-box {
+  /*float: left;*/
+  display: inline-block;
+  width: 350px;
+  height: 230px;
+  margin-left: 30px;
+  margin-top: -10px;
+  border: 1px solid rgba(119, 136, 155, 0.3);
+  border-right: none;
+  .user-greeting {
+    color: #FFF;
+    font-size: 30px;
   }
 }
 
-.communication-controls {
-  border-top: 1px solid rgba(119,136,155, .5);
-  height: 80px;
-  position: relative;
-  top: 49px;
-  .com-button {
-    float: left;
+.dashboard-action-button {
+    /*float: left;*/
+    display: inline-block;
     width: 174px;
     border-left: 1px solid rgba(119,136,155, .5);
-    height: 80px;
+    border-bottom: 1px solid rgba(119,136,155, .5);
+    height: 230px;
     color: #FFF;
     text-shadow: 0px 0px 1px #333;
     letter-spacing: 2px;
     font-size: 20px;
     padding-top: 22px;
-  }
+    margin-top: -10px;
 }

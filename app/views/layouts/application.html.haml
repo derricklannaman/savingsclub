@@ -8,8 +8,8 @@
     = csrf_meta_tags
   %body
     = render partial: 'shared/top_level_navigation'
+    #content-container
+      %p.notice= notice
+      %p.alert= alert
 
-    %p.notice= notice
-    %p.alert= alert
-    .container
       = yield
