@@ -3,11 +3,10 @@
     .user-greeting
       %span.hi Hi,
       %span.name= "#{current_user.email}"
-
-  .dashboard-action-button
-    = link_to 'New Susu', new_susu_path, class: ''
-  .dashboard-action-button
+  .dashboard-button.first
+    = link_to 'New Susu', new_susu_path
+  .dashboard-button
     = link_to "Send Text", "#"
-  .dashboard-action-button
+  .dashboard-button
     = link_to "Send Email", "#"
 
