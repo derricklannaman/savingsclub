@@ -11,9 +11,9 @@ development:
   <<: *default
   database: savingsclub_development
 
-# test:
-#   <<: *default
-#   database: savingsclub_test
+test:
+  <<: *default
+  database: savingsclub_test
 
 # production:
 #   <<: *default
