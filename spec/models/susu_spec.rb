@@ -6,9 +6,9 @@ describe Susu, :type => :model do
     subject.name = 'Team Derrick'
     expect(subject.name).to eq('Team Derrick')
   end
-  xit 'has a start date' do
-    subject.start_date = '2/15/2015'
-    expect(subject.start_date).to eq('2/15/2015')
+  it 'has a start date' do
+    subject.start_date = '2015-02-20 00:00:00.000000'
+    expect(subject.start_date).to eq('2015-02-20 00:00:00.000000')
   end
 
   it 'has a member count' do
