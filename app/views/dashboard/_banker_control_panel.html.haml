@@ -3,6 +3,9 @@
     .user-greeting
       %span.hi Hi,
       %span.name= "#{current_user.first_name}"
+      %p.last_sign_in
+        = visit_count
+
   .dashboard-button.first
     = link_to 'New Susu', new_susu_path
   .dashboard-button
