@@ -11,6 +11,12 @@
     = f.label :name
     = f.text_field :name, auto_focus: true
   %div
+    = f.label :start_date
+    = f.date_field :start_date
+  %div
+    = f.label :member_count
+    = f.number_field :member_count
+  %div
     = f.label :total_value, "Total Value"
     = f.number_field :total_value
   .actions

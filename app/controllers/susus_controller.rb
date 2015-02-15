@@ -51,6 +51,7 @@ class SususController < ApplicationController
     end
 
     def susu_params
-      params.require(:susu).permit(:name, :user_id, :total_value)
+      params.require(:susu).permit(:name, :user_id, :start_date, :member_count,
+                                   :total_value)
     end
 end
