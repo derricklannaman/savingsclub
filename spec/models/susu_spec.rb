@@ -16,7 +16,9 @@ describe Susu, :type => :model do
     expect(subject.member_count).to eq(10)
   end
 
-  it 'has a total value'
-
+  it 'has a total value' do
+    subject.total_value = 2000
+    expect(subject.total_value).to eq(2000)
+  end
 
 end
