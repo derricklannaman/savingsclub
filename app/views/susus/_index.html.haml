@@ -3,14 +3,14 @@
   %div
     - @susus.each do |susu|
       .susu
-        %p= susu.name
-
         %p
-          = "Begins: #{susu.start_date.to_time.strftime('%m/%d/%Y')}"
+          = susu.name
         %p
-          = "#{susu.member_count} Members"
+          = format_start_date(susu)
         %p
-          = "Payout: #{number_to_currency(susu.total_value)}"
+          = display_member_count(susu)
+        %p
+          = display_payout(susu)
 
         %span= link_to 'Show', susu
         %span= link_to 'Edit', edit_susu_path(susu)
