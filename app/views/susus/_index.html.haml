@@ -1,12 +1,18 @@
-%h3 Listing susus
+%h3 Susu List
 %section
   %div
     - @susus.each do |susu|
       .susu
         %p= susu.name
-        %p= susu.total_value
-        %p= susu.created_at
+
+        %p
+          = "Begins: #{susu.start_date.to_time.strftime('%m/%d/%Y')}"
+        %p
+          = "#{susu.member_count} Members"
+        %p
+          = "Payout: #{number_to_currency(susu.total_value)}"
+
         %span= link_to 'Show', susu
         %span= link_to 'Edit', edit_susu_path(susu)
-        %span= link_to 'Destroy', susu, method: :delete, data: { confirm: 'Are you sure?' }
+        %span= link_to 'Delete', susu, method: :delete, data: { confirm: 'Are you sure?' }
 %br/
