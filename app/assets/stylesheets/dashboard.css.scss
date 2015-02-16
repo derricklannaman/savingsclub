@@ -82,6 +82,14 @@ p.last_sign_in {
   padding: 20px;
 }
 
+.dashboard-button.recessed {
+  box-shadow: inset 0px 2px 31px rgba(127,157,161, .9);
+}
+
+.dashboard-button.levitate {
+  box-shadow: 0 11px 18px rgba(0,0,0,0.2);
+}
+
 .dashboard-button.first {
   /*margin-left: 50px;*/
 }
