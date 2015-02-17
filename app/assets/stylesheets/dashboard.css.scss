@@ -64,11 +64,13 @@ a#dashboard {
 p.last_sign_in {
   font-size: 15px;
   border: 1px solid rgba(119, 136, 155, 0.3);
+  border-top: $default-highlight;
   padding: 8px 3px;
   border-radius: 5px;
   margin-left: 10px;
   width: 290px;
   text-align: center;
+  background-color: $base-aqua-blue-D5;
 }
 
 

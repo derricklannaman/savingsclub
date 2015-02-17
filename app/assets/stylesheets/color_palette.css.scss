@@ -3,4 +3,14 @@ Color Chart
 ================*/
 
 /*Site-wide base colors*/
-$base-green:      #a4b357;
+$base-green:      #A4B357;
+$base-aqua-blue:  #A4C1C1;
+
+
+/*Fifty shades of....*/
+/*D = darken, L = lighten*/
+$base-aqua-blue-D5:  darken($base-aqua-blue, 5%);
+
+
+/*Effects*/
+$default-highlight:  1px solid rgba(255, 255, 255, 0.4);
