@@ -1,7 +1,7 @@
 module SususHelper
 
   def format_start_date(susu)
-    "Begins: #{susu.start_date.to_time.strftime('%m/%d/%Y')}"
+    "Begins: #{susu.start_date.to_time.strftime('%m/%d/%Y')}" unless susu.start_date.blank?
   end
 
   def display_member_count(susu)
