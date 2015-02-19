@@ -51,7 +51,7 @@ a#dashboard {
   width: 280px;
   height: 230px;
   margin: -10px 30px 0px 30px;
-  border: 1px solid rgba(119, 136, 155, 0.3);
+  border: $default-line;
   border-right: none;
   .user-greeting {
     color: #FFF;
@@ -63,7 +63,7 @@ a#dashboard {
 
 p.last_sign_in {
   font-size: 15px;
-  border: 1px solid rgba(119, 136, 155, 0.3);
+  border: $default-line;
   border-top: $default-highlight;
   padding: 8px 3px;
   border-radius: 5px;
@@ -78,7 +78,7 @@ p.last_sign_in {
   width: 174px;
   height: 231px;
   margin-top: -11px;
-  border: 1px solid rgba(119,136,155, .3);
+  border: $default-line;
   color: #FFF;
   letter-spacing: 2px;
   font-size: 20px;
