@@ -22,8 +22,12 @@ class SususController < ApplicationController
   def create
     new_susu(susu_params)
     @susu.user_id = user_id
-    @susu.save
-    go_to_dashboard
+    if @susu.save
+      go_to_dashboard
+    else
+      render :new
+    end
+
   end
 
   def update
