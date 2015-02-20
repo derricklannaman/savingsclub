@@ -6,6 +6,7 @@ class MembersController < ApplicationController
 
   def new
     @member = Member.new
+    respond_with(@member)
   end
 
   def create
@@ -18,28 +19,35 @@ class MembersController < ApplicationController
   end
 
   def edit
-    @member = Member.find(params[:id])
+    find_member
   end
 
   def update
-    @member = Member.find(params[:id])
+    find_member
     @member.update(member_params)
     respond_with(@member)
   end
 
   def show
+    find_member
     respond_with(@member)
   end
 
   def destroy
+    find_member
     @member.destroy
     respond_with(@member)
   end
 
 private
 
+  def member_params
+    params.require(:member).permit(:first_name, :last_name, :email)
+  end
 
-
+  def find_member
+    @member = Member.find(params[:id])
+  end
 
 
 end
