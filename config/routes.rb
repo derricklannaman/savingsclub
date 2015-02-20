@@ -9,5 +9,5 @@ Rails.application.routes.draw do
   get 'learn', to: 'home#learn'
   get 'dashboard', to: 'dashboard#show'
 
-  resources :susus
+  resources :susus, :members
 end

@@ -1,7 +1,7 @@
 class SususController < ApplicationController
   before_action :find_susu, only: [:show, :edit, :update, :destroy]
 
-  respond_to :html
+  respond_to :html, :json
 
   def index
     go_to_dashboard

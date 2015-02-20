@@ -1,40 +1,40 @@
 class MembersController < ApplicationController
 
+  before_action :find_member, only: [:edit, :update, :show, :delete]
+  respond_to :html, :json
+
   def index
-    @members = current_user.members
+    @members = Member.all
   end
 
   def new
-    @member = Member.new
+    @member = Member.new(member_params)
     respond_with(@member)
   end
 
   def create
     @member = Member.new(member_params)
     if @member.save
-      respond_with(@member), notice: "Good Job"
+      flash[:notice] = "Great. Member saved Successfully."
+      respond_with(@member)
     else
       render :new
     end
   end
 
   def edit
-    find_member
   end
 
   def update
-    find_member
     @member.update(member_params)
     respond_with(@member)
   end
 
   def show
-    find_member
     respond_with(@member)
   end
 
   def destroy
-    find_member
     @member.destroy
     respond_with(@member)
   end
