@@ -12,7 +12,7 @@
     = render partial: 'shared/top_level_navigation'
     = "#{controller_name} #{action_name}"
     #content-container
-      %p.notice= notice
-      %p.alert= alert
+    = render 'message_panel'
+
 
       = yield
