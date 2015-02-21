@@ -2,5 +2,12 @@
   .navbar-brand
     = link_to "Susu<span class='green-bank'>Bank</span>".html_safe, root_path, id: 'logo'
 
+  - unless signed_in?
+    .public_links
+      = link_to "About Us", about_path
+      = link_to "Learn More", learn_path
+      = link_to "Contact Us", contact_path
+
+
   #sign_in_status.navbar-right
     = render partial: 'shared/sign_in_status'

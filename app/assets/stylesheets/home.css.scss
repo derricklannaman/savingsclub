@@ -1,3 +1,13 @@
-// Place all the styles related to the Home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'color_palette';
+
+div.public_links {
+  width: 500px;
+  float: left;
+  position: relative;
+  left: 20%;
+  a {
+    color: $base-green;
+    font-size: 17px;
+    margin-left: 20px;
+  }
+}
