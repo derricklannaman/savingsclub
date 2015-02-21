@@ -5,13 +5,18 @@
       %span.name= "#{current_user.first_name}"
       %p.last_sign_in
         = visit_count
-
-  .dashboard-button.first
-    = link_to 'New Susu', new_susu_path
-  .dashboard-button
-    = link_to 'SusuBuilder ', '#'
-  .dashboard-button
-    = link_to "Send Text", "#"
-  .dashboard-button
-    = link_to "Send Email", "#"
+  - if (controller_name == 'dashboard' && action_name == 'show')
+    .dashboard-button.first
+      = link_to 'New Susu', new_susu_path
+    .dashboard-button
+      = link_to 'SusuBuilder ', '#'
+    .dashboard-button
+      = link_to "Send Text", "#"
+    .dashboard-button
+      = link_to "Send Email", "#"
+  - else (controller_name == 'susu' && action_name == 'show')
+    .dashboard-button.first
+      = link_to 'Add', new_member_path
+    .dashboard-button
+      = link_to 'Whatever ', '#'
 

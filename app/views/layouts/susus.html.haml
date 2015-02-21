@@ -8,8 +8,8 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body{:class => "#{controller_name} #{action_name}"}
+    = render partial: 'shared/top_level_navigation'
 
-    = render partial: 'shared/brand_bar'
     = "#{controller_name} #{action_name}"
     %p.notice= notice
     %p.alert= alert

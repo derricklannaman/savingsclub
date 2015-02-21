@@ -9,8 +9,8 @@
     = csrf_meta_tags
 
   %body{:class => "#{controller_name} #{action_name}"}
-    = "#{controller_name}"
     = render partial: 'shared/top_level_navigation'
+    = "#{controller_name} #{action_name}"
     #content-container
       %p.notice= notice
       %p.alert= alert
