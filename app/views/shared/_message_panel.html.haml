@@ -1,2 +1,5 @@
-%p.notice= notice
-%p.alert= alert
+.message_panel
+  - if !flash[:notice].blank?
+    .notice= notice
+  - elsif !flash[:alert].blank?
+    .alert= alert

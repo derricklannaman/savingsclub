@@ -27,13 +27,23 @@ a#logo {
   }
 }
 
-div#sign_in_status {
+#sign_in_status {
   font-size: 18px;
   margin-right: 10px;
   color: #FFF;
   a {
     color: $base-green;
   }
+}
+
+#message_panel {
+  height: 50px;
+  background-color: $base-aqua-blue-D5;
+  text-align: center;
+  color: #FFF;
+  font-size: 21px;
+  letter-spacing: 1px;
+  padding-top: 5px;
 }
 
 
