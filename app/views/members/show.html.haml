@@ -1,4 +1,9 @@
-%p#notice= notice
+%div
+  = @member.first_name
+%span
+  = @member.last_name
+%div
+  = @member.email
 
 
 = link_to 'Edit', edit_member_path(@member)

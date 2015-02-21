@@ -8,7 +8,7 @@ class MembersController < ApplicationController
   end
 
   def new
-    @member = Member.new(member_params)
+    @member = Member.new
     respond_with(@member)
   end
 

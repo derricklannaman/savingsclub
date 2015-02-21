@@ -18,6 +18,7 @@ group :development do
   gem 'pry-rails'
   gem 'pry-rescue'
   gem 'quiet_assets'
+  gem 'meta_request'
   gem 'spring'
   gem 'annotate'
   gem 'awesome_print'

@@ -8,6 +8,7 @@ class SususController < ApplicationController
   end
 
   def show
+    @member = Member.new
     respond_with(@susu)
   end
 
