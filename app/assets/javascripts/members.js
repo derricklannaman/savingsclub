@@ -1,2 +1,10 @@
-// Place all the behaviors and hooks related to the matching controller here.
-// All this logic will automatically be available in application.js.
+$(document).ready(function(){
+
+  $('form#new_member').hide();
+  $('a#add-member-button').on('click', showMemberForm);
+});
+
+
+function showMemberForm() {
+  $('form#new_member').fadeIn(3000)
+}
