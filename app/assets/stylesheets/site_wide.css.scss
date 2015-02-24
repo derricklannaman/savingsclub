@@ -123,15 +123,15 @@ a#logo {
   animation-name: animFade;
 }
 
-@-webkit-keyframes animScaleUp {
+/*@-webkit-keyframes animScaleUp {
   0% { opacity: 0; -webkit-transform: translate3d(0,-50%,0) scale3d(0,0,1); }
   100% { opacity 1; -webkit-transform: translate3d(0,-50%,0) scale3d(1,1,1); }
-}
+}*/
 
-@keyframes animScaleUp {
-  0% { opacity: 0; -webkit-transform: translate3d(0,-50%,0) scale3d(0,0,1); transform: translate3d(0,-50%,0) scale3d(0,0,1); }
-  100% { opacity 1; -webkit-transform: translate3d(0,-50%,0) scale3d(1,1,1); transform: translate3d(0,-50%,0) scale3d(1,1,1); }
-}
+/*@keyframes animScaleUp {
+  0% { opacity: 0; -webkit-transform: translate3d(0,-50%,0); scale3d(0,0,1); transform: translate3d(0,-50%,0); scale3d(0,0,1); }
+  100% { opacity 1; -webkit-transform: translate3d(0,-50%,0); scale3d(1,1,1); transform: translate3d(0,-50%,0); scale3d(1,1,1); }
+}*/
 
 .ns-effect-slidetop.ns-show,
 .ns-effect-slidetop.ns-hide {
