@@ -6,5 +6,5 @@ $(document).ready(function(){
 
 
 function showMemberForm() {
-  $('form#new_member').fadeIn(3000)
+  $('form#new_member').fadeIn(100);
 }

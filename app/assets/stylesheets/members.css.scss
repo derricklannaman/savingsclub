@@ -1,5 +1,7 @@
+@import 'color_palette';
+
 form#new_member {
-  border: 1px solid #F00;
+  border: $default-line;
   width: 400px;
   float: right;
   margin: 20px;

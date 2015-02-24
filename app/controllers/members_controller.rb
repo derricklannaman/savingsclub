@@ -14,6 +14,7 @@ class MembersController < ApplicationController
 
   def create
     @member = Member.new(member_params)
+    @member.susu_id = params[:susu_id]
     if @member.save
       flash[:notice] = "Great. Member saved Successfully."
       respond_with(@member)
