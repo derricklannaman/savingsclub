@@ -17,7 +17,7 @@ class MembersController < ApplicationController
     @member.susu_id = params[:susu_id]
     if @member.save
       flash[:notice] = "Great. Member saved Successfully."
-      respond_with(@member)
+      redirect_to susu_path(params[:susu_id])
     else
       render :new
     end

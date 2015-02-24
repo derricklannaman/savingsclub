@@ -9,3 +9,10 @@
   = link_to 'Edit', edit_susu_path(@susu)
   |
   \#{link_to 'Back', susus_path}
+
+
+- @susu_members.each do |member|
+  .member
+    %p= member.first_name
+    %p= member.last_name
+    %p= member.email
