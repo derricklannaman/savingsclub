@@ -22,5 +22,13 @@ module DashboardHelper
     current_user.sign_in_count == 1
   end
 
+  def dashboard?
+    controller_name == 'dashboard'
+  end
+
+  def show_page?
+    action_name == 'show'
+  end
+
 
 end
