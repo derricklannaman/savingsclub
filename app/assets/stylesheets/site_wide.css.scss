@@ -37,49 +37,59 @@ a#logo {
 }
 
 #message_panel {
+  float: left;
+  width: 100%;
   height: 50px;
-  background-color: $base-aqua-blue-D5;
+  /*background-color: $base-aqua-blue-D5;*/
   text-align: center;
   color: #FFF;
   font-size: 21px;
   letter-spacing: 1px;
   padding-top: 5px;
+  box-shadow: inset 100em 0 rgba(0,0,0,0.6);
+  background: #b7b5b3;
+}
+
+#message_panel {
+  box-shadow: inset 100em 0 rgba(0,0,0,0.6);
+  background: #b7b5b3;
 }
 
 /* To bar notifications */
-.ns-box.ns-bar {
+/*.ns-box.ns-bar {
   top: 0;
   left: 0;
   width: 100%;
-}
+}*/
 
-.ns-bar .ns-close {
+/*.ns-bar .ns-close {
   background: transparent;
   top: 50%;
   right: 20px;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-}
+}*/
 
-.ns-bar .ns-close::before,
+/*.ns-bar .ns-close::before,
 .ns-bar .ns-close::after {
   background: #b7b5b3;
-}
+}*/
 
-[class^="ns-effect-"].ns-bar.ns-hide,
+/*[class^="ns-effect-"].ns-bar.ns-hide,
 [class*=" ns-effect-"].ns-bar.ns-hide {
   -webkit-animation-direction: reverse;
   animation-direction: reverse;
-}
+}*/
 
 /* Individual Effects */
 
 /* Slide on top */
-.ns-effect-slidetop {
-  box-shadow: inset 4.5em 0 rgba(0,0,0,0.6);
+#message_panel {
+  box-shadow: inset 100em 0 rgba(0,0,0,0.6);
+  background: #b7b5b3;
 }
 
-.ns-effect-slidetop .icon {
+/*.ns-effect-slidetop .icon {
   position: absolute;
   display: block;
   font-size: 109%;
@@ -87,26 +97,26 @@ a#logo {
   left: 1em;
   -webkit-transform: translate3d(0,-50%,0);
   transform: translate3d(0,-50%,0);
-}
+}*/
 
-.ns-effect-slidetop p {
+/*.ns-effect-slidetop p {
   padding: 0 3.2em;
   font-size: 1.2em;
   display: inline-block;
-}
+}*/
 
-.ns-effect-slidetop .ns-close::before,
+/*.ns-effect-slidetop .ns-close::before,
 .ns-effect-slidetop .ns-close::after {
   width: 2px;
   background: #14151b;
-}
+}*/
 
-.ns-effect-slidetop .ns-close:hover::before,
+/*.ns-effect-slidetop .ns-close:hover::before,
 .ns-effect-slidetop .ns-close:hover::after {
   background: #fff;
-}
+}*/
 
-.ns-effect-slidetop.ns-show .icon,
+/*.ns-effect-slidetop.ns-show .icon,
 .ns-effect-slidetop.ns-show p {
   -webkit-animation-name: animScaleUp;
   animation-name: animScaleUp;
@@ -116,25 +126,24 @@ a#logo {
   animation-delay: 0.2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-}
+}*/
 
-.ns-effect-slidetop.ns-show p {
+/*.ns-effect-slidetop.ns-show p {
   -webkit-animation-name: animFade;
   animation-name: animFade;
-}
+}*/
 
 /*@-webkit-keyframes animScaleUp {
   0% { opacity: 0; -webkit-transform: translate3d(0,-50%,0) scale3d(0,0,1); }
   100% { opacity 1; -webkit-transform: translate3d(0,-50%,0) scale3d(1,1,1); }
-}*/
+}
 
-/*@keyframes animScaleUp {
+@keyframes animScaleUp {
   0% { opacity: 0; -webkit-transform: translate3d(0,-50%,0); scale3d(0,0,1); transform: translate3d(0,-50%,0); scale3d(0,0,1); }
   100% { opacity 1; -webkit-transform: translate3d(0,-50%,0); scale3d(1,1,1); transform: translate3d(0,-50%,0); scale3d(1,1,1); }
 }*/
 
-.ns-effect-slidetop.ns-show,
-.ns-effect-slidetop.ns-hide {
+#message_panel {
   -webkit-animation-name: animSlideTop;
   animation-name: animSlideTop;
   -webkit-animation-duration: 0.3s;

@@ -7,7 +7,9 @@ $(document).ready(function(){
 });
 
 function check_for_message() {
-  if ( $('notice').is(':empty') ) {
-    alert("This works!");
+
+  if ( $('#message_panel').children().length == 0 ) {
+    $('#message_panel').hide();
   }
+
 }
