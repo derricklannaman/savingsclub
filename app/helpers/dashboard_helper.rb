@@ -26,6 +26,10 @@ module DashboardHelper
     controller_name == 'dashboard'
   end
 
+  def isController? name
+    controller_name == name
+  end
+
   def show_page?
     action_name == 'show'
   end
