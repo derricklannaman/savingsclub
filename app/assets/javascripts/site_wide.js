@@ -7,9 +7,11 @@ $(document).ready(function(){
 });
 
 function check_for_message() {
-
-  if ( $('#message_panel').children().length == 0 ) {
-    $('#message_panel').hide();
+  if ( $('p#notice').text().length > 0 ) {
+    console.log('notice is not empty');
+    $('p#notice').addClass('notificationVisible')
   }
-
+  else if ( $('p#notice').text().length == 0 ) {
+    $('p#notice').addClass('notificationInvisible')
+  }
 }
