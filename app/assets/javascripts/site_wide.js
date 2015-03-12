@@ -1,18 +1,17 @@
 $(document).ready(function(){
-
-  // $('#message_panel').hide(function());
-  // $('#message_panel').on('load', check_for_message);
   $( window ).load(check_for_message)
-
 });
 
 function check_for_message() {
-  if ( $('p#notice').text().length > 0 ) {
-    console.log('notice is not empty');
-    $('p#notice').addClass('notificationVisible');
-    setTimeout(function(){ alert("Hello"); }, 3000);
+  var notice = $('p#notice');
+  if ( notice.text().length > 0 ) {
+    notice.addClass('notificationVisible');
+    setTimeout(function(){
+      notice.fadeOut(1000);
+      setTimeout(function(){ notice.empty() }, 1500)
+         }, 5000);
   }
-  else if ( $('p#notice').text().length == 0 ) {
-    $('p#notice').addClass('notificationInvisible')
+  else if ( notice.text().length == 0 ) {
+    notice.addClass('notificationInvisible');
   }
 }
