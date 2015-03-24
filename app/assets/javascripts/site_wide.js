@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $( window ).load(check_for_message)
+  $( window ).load(check_for_message);
 });
 
 function check_for_message() {
