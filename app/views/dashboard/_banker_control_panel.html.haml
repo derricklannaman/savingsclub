@@ -5,7 +5,7 @@
       %span.name= "#{current_user.first_name}"
       %p.last_sign_in
         = visit_count
-  - if isController? 'dashboard'
+  - if is_controller? 'dashboard' || (is_controller? 'susu' && action_name == 'new ')
     .dashboard-button.first
       = link_to 'New Susu', new_susu_path
     .dashboard-button
@@ -14,7 +14,7 @@
       = link_to "Send Text", "#"
     .dashboard-button
       = link_to "Send Email", "#"
-  - else isController? 'susu' && show_page?
+  - else is_controller? 'susu' && show_page?
     .dashboard-button.first
       %a{:href => "#", id: 'add-member-button'} Add Member
     .dashboard-button

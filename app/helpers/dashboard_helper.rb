@@ -26,7 +26,7 @@ module DashboardHelper
     controller_name == 'dashboard'
   end
 
-  def isController? name
+  def is_controller? name
     controller_name == name
   end
 
