@@ -9,6 +9,8 @@ Dashboard Area
   ====================
 */
 .dashboard-toolbar {
+  position: relative;
+  z-index: 2;
   height: 55px;
   box-shadow: inset 0px 2px 10px rgba(255, 255, 255, 0.5);
   background: $base-green; /* Old browsers */
@@ -39,6 +41,8 @@ a#dashboard {
 
 #banker_control_panel {
   margin: 0 auto;
+  margin-top: -5px;
+  float: left;
   width: 100%;
   background-color: rgba(164, 193, 193, 1);
   box-shadow: inset 0px 0px 4px #333;

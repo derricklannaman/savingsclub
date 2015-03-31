@@ -3,18 +3,14 @@ $(document).ready(function() {
   $('#clear-view_btn').on('click', hideBankerNavigation);
 });
 
-
 function hideBankerNavigation() {
   if( $('body').hasClass('susu' && 'show') ) {
-    $('body').fadeOut(1000);
-    setTimeout(function(){
-      $('#banker_control_panel').hide();
-    }, 500)
-
-
+    $( "#banker_control_panel" ).animate({
+      opacity: 0,
+      top: "-=650",
+      height: "toggle"
+    }, 500 );
   }
-
-  // $('#banker_control_panel').fadeToggle(500);
 }
 
 function raisePushButton() {
