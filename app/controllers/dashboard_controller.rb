@@ -3,6 +3,7 @@ class DashboardController < ApplicationController
 
   def show
     @susus = current_user.susus
+    @susu = Susu.new
   end
 
 end
