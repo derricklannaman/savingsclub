@@ -1,3 +1,17 @@
+/ Modal
+#myModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+        %h4#myModalLabel.modal-title Modal title
+      .modal-body
+        \...
+      .modal-footer
+        %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
+        %button.btn.btn-primary{:type => "button"} Save changes
+
 #banker_control_panel
   .welcome-box
     .user-greeting
@@ -14,6 +28,10 @@
       = link_to "Send Text", "#"
     .dashboard-button
       = link_to "Send Email", "#"
+    / Button trigger modal
+    %button.btn.btn-primary.btn-lg{"data-target" => "#myModal", "data-toggle" => "modal", :type => "button"}
+      Launch demo modal
+
   - else is_controller? 'susu' && show_page?
     .dashboard-button.first
       %a{:href => "#", id: 'add-member-button'} Add Member
