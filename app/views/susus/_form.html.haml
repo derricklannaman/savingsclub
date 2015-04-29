@@ -7,17 +7,23 @@
       %ul
         - @susu.errors.full_messages.each do |message|
           %li= message
-  %div
-    = f.label :name
-    = f.text_field :name, auto_focus: true
-  %div
-    = f.label :start_date
-    = f.date_field :start_date
-  %div
-    = f.label :member_count
-    = f.number_field :member_count
-  %div
-    = f.label :total_value, "Total Value"
-    = f.number_field :total_value
+  #susu-form-lable-group
+    %div
+      = f.label :name
+    %div
+      = f.label :start_date
+    %div
+      = f.label :member_count
+    %div
+      = f.label :total_value, "Total Value"
+  #susu-form-input-group
+    %div
+      = f.text_field :name, auto_focus: true, class: 'input-margin'
+    %div
+      = f.date_field :start_date, class: 'input-margin'
+    %div
+      = f.number_field :member_count, class: 'input-margin'
+    %div
+      = f.number_field :total_value, class: 'input-margin'
   .actions
-    = f.submit
+    = f.submit "Create Susu", class: 'btn btn-primary'

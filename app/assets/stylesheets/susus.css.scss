@@ -2,6 +2,23 @@ body#show-susu-container {
   /*background-image: url('green_cup.png');*/
 }
 
+/* New susu form */
+
+form#new_susu {
+  #susu-form-lable-group {
+    float: left;
+  }
+  .input-margin {
+    margin: 1px;
+    margin-left: 50px;
+    width: 200px;
+    height: 30px;
+  }
+}
+
+/* New susu form -- End */
+
+
 .susu {
   width: 300px;
   height: 260px;
