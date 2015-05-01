@@ -2,7 +2,7 @@ body#show-susu-container {
   /*background-image: url('green_cup.png');*/
 }
 
-/* New susu form */
+/*========== New Susu Form =========== */
 
 form#new_susu {
   #susu-form-lable-group {
@@ -21,8 +21,14 @@ h4#susuBuilderModalLabel {
   font-size: 30px;
 }
 
-/* New susu form -- End */
+/*Footer - Display results*/
+div#results-container {
+  border: 1px solid #F00;
+  height: 80px;
+  background-color: #FFF;
+}
 
+/*========== New Susu Form End =========== */
 
 .susu {
   width: 300px;
