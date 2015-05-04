@@ -26,4 +26,6 @@
     %div
       = f.number_field :total_value, class: 'input-margin'
   .actions
+    %button.btn.btn-primary.calculate{:type => "button"} Calculate
+    %button.btn.btn-primary.clear{:type => "button"} Clear
     = f.submit "Create Susu", class: 'btn btn-primary'
