@@ -5,7 +5,7 @@ body#show-susu-container {
 /*========== New Susu Form =========== */
 
 form#new_susu {
-  #susu-form-lable-group {
+  #susu-form-label-group {
     float: left;
   }
   .input-margin {
@@ -14,6 +14,13 @@ form#new_susu {
     width: 200px;
     height: 30px;
   }
+  .susu-form-label {
+    line-height: 28px;
+  }
+  #susu-form-input-group {
+    margin-bottom: 20px;
+  }
+
 }
 
 h4#susuBuilderModalLabel {

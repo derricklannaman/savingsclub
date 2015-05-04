@@ -7,14 +7,14 @@
       %ul
         - @susu.errors.full_messages.each do |message|
           %li= message
-  #susu-form-lable-group
-    %div
+  #susu-form-label-group
+    .susu-form-label
       = f.label :name
-    %div
+    .susu-form-label
       = f.label :start_date
-    %div
+    .susu-form-label
       = f.label :member_count
-    %div
+    .susu-form-label
       = f.label :total_value, "Total Value"
   #susu-form-input-group
     %div
@@ -26,6 +26,6 @@
     %div
       = f.number_field :total_value, class: 'input-margin'
   .actions
-    %button.btn.btn-primary.calculate{:type => "button"} Calculate
+    %button.btn.btn-primary#calculate{:type => "button"} Calculate
     %button.btn.btn-primary.clear{:type => "button"} Clear
     = f.submit "Create Susu", class: 'btn btn-primary'
