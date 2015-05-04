@@ -5,5 +5,5 @@ $(document).ready(function(){
 });
 
 function calculateSusuBankNumbers() {
-  alert('Yes')
+  var members = $('#susu_member_count').val();
 }
