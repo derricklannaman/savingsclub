@@ -5,11 +5,14 @@ $(document).ready(function(){
 });
 
 function calculateSusuBankNumbers() {
+  if( $('#susu-title').text().length > 0) {
+    $('#susu-title').empty();
+  }
+
   var members = parseInt( $('#susu_member_count').val() );
   var susuValue = parseInt( $('#susu_total_value').val() );
   var contributeAmount = susuValue / members;
-  var everyWeek = "<span>Every Week $</span>";
+  var susuName = $('#susu_name').val();
 
-  $('#per-period').append(everyWeek)
-  $('#contribution-amount').append(contributeAmount)
+  $('#susu-title').append(susuName);
 }

@@ -49,19 +49,23 @@ div#results-container {
     height: 80px;
     width: 149px;
     float: left;
+    color: #FFF;
+    font-size: 25px;
+    text-align: center;
+    text-transform: capitalize;
   }
-  #susu-name {
-    background-color: red;
+  #susu-title {
+    background-color: #4E1B40;
     border-bottom-left-radius: 4px;
   }
   #total-payout {
-    background-color: blue;
+    background-color: #752760;
   }
   #duration {
-    background-color: yellow;
+    background-color: #9C3380;
   }
   #contribution-period {
-    background-color: orange;
+    background-color: #C24098;
     border-bottom-right-radius: 4px;
     width: 151px;
   }
