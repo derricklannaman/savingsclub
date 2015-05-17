@@ -1,5 +1,5 @@
 / SusuBuilderModal
-= render 'susu_builder_modal'
+= render 'dashboard/susu_builder_modal'
 
 #banker_control_panel
   .welcome-box
@@ -9,9 +9,7 @@
       %p.last_sign_in
         = visit_count
   - if is_controller? 'dashboard' || (is_controller? 'susu' && action_name == 'new ')
-    .dashboard-button.first
-      = link_to 'New Susu', new_susu_path
-    %button.dashboard-button{"data-target" => "#susuBuilderModal", "data-toggle" => "modal", :type => "button"}SusuBuilder
+    .dashboard-button.first{"data-target" => "#susuBuilderModal", "data-toggle" => "modal", :type => "button"}SusuBuilder
     .dashboard-button
       = link_to "Send Email", "#"
 

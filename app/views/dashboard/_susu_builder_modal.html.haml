@@ -9,4 +9,12 @@
         = render 'susus/form.html.haml'
       .modal-footer
         #results-container
-          #contribution-results
+          .weekly
+            %span.builder-results#per-period
+            %span.builder-results#contribution-amount
+          .biweekly
+            %span.builder-results#per-period
+            %span.builder-results#contribution-amount
+          .monthly
+            %span.builder-results#per-period
+            %span.builder-results#contribution-amount
