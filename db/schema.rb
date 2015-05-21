@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150504004239) do
+ActiveRecord::Schema.define(version: 20150521180113) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,12 +38,13 @@ ActiveRecord::Schema.define(version: 20150504004239) do
   create_table "susus", force: :cascade do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "name",         limit: 255
+    t.string   "name",                   limit: 255
     t.decimal  "total_value"
     t.integer  "user_id"
     t.datetime "start_date"
     t.datetime "end_date"
-    t.integer  "member_count",             default: 2
+    t.integer  "member_count",                       default: 2
+    t.string   "scheduled_contribution"
   end
 
   add_index "susus", ["user_id"], name: "index_susus_on_user_id", using: :btree
