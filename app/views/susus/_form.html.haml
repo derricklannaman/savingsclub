@@ -13,6 +13,8 @@
     .susu-form-label
       = f.label :start_date
     .susu-form-label
+      = f.label :scheduled_contribution
+    .susu-form-label
       = f.label :member_count
     .susu-form-label
       = f.label :total_value, "Total Value"
@@ -21,6 +23,8 @@
       = f.text_field :name, auto_focus: true, class: 'input-margin'
     %div
       = f.date_field :start_date, class: 'input-margin'
+    %div
+      = f.select(:scheduled_contribution, options_for_select([['Every Week', 1], ['Every Two Weeks', 2], ['Monthly', 3]]), {}, {class: 'input-margin select-box'})
     %div
       = f.number_field :member_count, class: 'input-margin'
     %div
