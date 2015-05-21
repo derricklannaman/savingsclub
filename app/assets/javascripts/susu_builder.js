@@ -1,13 +1,17 @@
 $(document).ready(function(){
-  // $('#results-header').hide();
   $('#calculate').on('click', calculateSusuBankNumbers);
-  // $('#results-header p').fadeOut();
+  $('.btn-warning#clear').on('click', clearCalculatedElements);
 });
 
 function calculateSusuBankNumbers() {
-  if( $('#susu-title').text().length > 0) {
-    $('#susu-title').empty();
-    $('#total-payout').empty();
+  // First remove any text from results if the exist
+  var susuBuilderFormInputs = $('.result-item');
+
+  for(var i =0 ; i < susuBuilderFormInputs.length; i++) {
+    var sb_inputs = $(susuBuilderFormInputs[i]);
+    if( sb_inputs.text() > 0 ) {
+      $('#susu-title, #total-payout, #duration, #contribution-period').empty();
+    }
   }
 
   var members = parseInt( $('#susu_member_count').val() );
@@ -15,7 +19,16 @@ function calculateSusuBankNumbers() {
   var contributeAmount = susuValue / members;
   var susuName = $('#susu_name').val();
   $('#result-title').css('color', '#FFFFFF');
+
+  // Add results to calculate panel
   $('#susu-title').append(susuName);
   $('#total-payout').append(susuValue);
   $('#contribution-period').append(contributeAmount);
+}
+
+function clearCalculatedElements() {
+  $('#susu-title').empty();
+  $('#total-payout').empty();
+  $('#duration').empty();
+  $('#contribution-period').empty();
 }
