@@ -14,6 +14,7 @@ gem 'jbuilder', '~> 2.0'
 gem "haml-rails"
 gem 'jquery-turbolinks'
 gem 'httparty'
+gem 'accountingjs-rails'
 
 group :development do
   gem 'pry-rails'

@@ -36,15 +36,8 @@ function displayCalculatedResults(susuValue) {
 }
 
 function displayTotalValue(susuValue) {
-  if (  ) {
-
-  }
-  else if (typeof(susuValue) == "number"){
-    alert("There in an error in the totsl value field." )
-  }
-
-  // var input = $('#total-payout')
-  // $('#total-payout').append(susuValue);
+  var value = accounting.formatMoney(susuValue)
+  $('#total-payout').append(value);
 }
 
 function clearCalculatedElements() {

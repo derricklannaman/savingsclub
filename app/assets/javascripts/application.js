@@ -15,5 +15,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
+//= require accountingjs
 //= require_tree .
 
