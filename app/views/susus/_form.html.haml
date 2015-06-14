@@ -24,7 +24,7 @@
     %div
       = f.date_field :start_date, class: 'input-margin'
     %div
-      = f.select(:scheduled_contribution, options_for_select([['Every Week', 1], ['Every Two Weeks', 2], ['Monthly', 3]]), {}, {class: 'input-margin select-box'})
+      = f.select(:scheduled_contribution, options_for_select([['every week', 'every week'], ['every two weeks', 'every two weeks'], ['monthly', 'monthly']]), {}, {class: 'input-margin select-box'})
     %div
       = f.number_field :member_count, class: 'input-margin'
     %div

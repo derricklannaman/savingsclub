@@ -13,6 +13,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem "haml-rails"
 gem 'jquery-turbolinks'
+gem 'httparty'
 
 group :development do
   gem 'pry-rails'

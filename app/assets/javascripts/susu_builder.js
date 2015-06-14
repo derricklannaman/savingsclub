@@ -4,7 +4,7 @@ $(document).ready(function(){
 });
 
 function calculateSusuBankNumbers() {
-  // First remove any text from results if the exist
+  // First remove any text from results if they exist
   var susuBuilderFormInputs = $('.result-item');
 
   for(var i =0 ; i < susuBuilderFormInputs.length; i++) {
@@ -16,14 +16,35 @@ function calculateSusuBankNumbers() {
 
   var members = parseInt( $('#susu_member_count').val() );
   var susuValue = parseInt( $('#susu_total_value').val() );
+  var schedule = $("#susu_scheduled_contribution").val();
+      schedule = "<div id='schedule'>" + schedule
   var contributeAmount = susuValue / members;
   var susuName = $('#susu_name').val();
   $('#result-title').css('color', '#FFFFFF');
 
   // Add results to calculate panel
-  $('#susu-title').append(susuName);
-  $('#total-payout').append(susuValue);
-  $('#contribution-period').append(contributeAmount);
+  displayCalculatedResults(susuValue)
+  // $('#susu-title').append(susuName);
+  // $('#total-payout').append(susuValue);
+  // $('#contribution-period').append('$ ' + contributeAmount + schedule)
+
+}
+
+function displayCalculatedResults(susuValue) {
+  displayTotalValue(susuValue);
+
+}
+
+function displayTotalValue(susuValue) {
+  if (  ) {
+
+  }
+  else if (typeof(susuValue) == "number"){
+    alert("There in an error in the totsl value field." )
+  }
+
+  // var input = $('#total-payout')
+  // $('#total-payout').append(susuValue);
 }
 
 function clearCalculatedElements() {

@@ -20,7 +20,6 @@ form#new_susu {
   #susu-form-input-group {
     margin-bottom: 20px;
   }
-
 }
 
 h4#susuBuilderModalLabel {
@@ -32,6 +31,13 @@ h4#susuBuilderModalLabel {
   height: 80px;
   width: 148px;
   float: left;
+
+}
+
+#schedule {
+  font-size: 15px;
+  text-transform: lowercase;
+  text-align: center;
 }
 
 /*Action Buttons*/
