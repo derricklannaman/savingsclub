@@ -19,14 +19,11 @@ function calculateSusuBankNumbers() {
   var schedule = $("#susu_scheduled_contribution").val();
       schedule = "<div id='schedule'>" + schedule
   var contributeAmount = susuValue / members;
-  var susuName = $('#susu_name').val();
   $('#result-title').css('color', '#FFFFFF');
 
   // Add results to calculate panel
   displayCalculatedResults(susuValue)
-  // $('#susu-title').append(susuName);
-  // $('#total-payout').append(susuValue);
-  // $('#contribution-period').append('$ ' + contributeAmount + schedule)
+  $('#contribution-period').append('$ ' + contributeAmount + schedule)
 
 }
 
@@ -36,8 +33,11 @@ function displayCalculatedResults(susuValue) {
 }
 
 function displayTotalValue(susuValue) {
-  var value = accounting.formatMoney(susuValue)
-  $('#total-payout').append(value);
+  var susuName = $('#susu_name').val(),
+      value = accounting.formatMoney(susuValue);
+  $('#total-payout').append("<div>" + susuName + "</div>")
+                      .append("<div>Total Payout:</div>")
+                        .append(value);
 }
 
 function clearCalculatedElements() {
