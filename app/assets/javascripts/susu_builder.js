@@ -22,14 +22,17 @@ function calculateSusuBankNumbers() {
   $('#result-title').css('color', '#FFFFFF');
 
   // Add results to calculate panel
-  displayCalculatedResults(susuValue)
-  $('#contribution-period').append('$ ' + contributeAmount + schedule)
+  displayCalculatedResults(susuValue, contributeAmount, schedule)
+}
+
+function displayCalculatedResults(susuValue, contributeAmount, schedule) {
+  displayTotalValue(susuValue);
+  displayContributionSchedule(contributeAmount, schedule);
 
 }
 
-function displayCalculatedResults(susuValue) {
-  displayTotalValue(susuValue);
-
+function displayContributionSchedule(contributeAmount, schedule) {
+  $('#contribution-period').append('$ ' + contributeAmount + schedule)
 }
 
 function displayTotalValue(susuValue) {
