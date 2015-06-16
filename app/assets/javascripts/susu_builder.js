@@ -10,7 +10,7 @@ function calculateSusuBankNumbers() {
   for(var i =0 ; i < susuBuilderFormInputs.length; i++) {
     var sb_inputs = $(susuBuilderFormInputs[i]);
     if( sb_inputs.text() > 0 ) {
-      $('#susu-title, #total-payout, #duration, #contribution-period').empty();
+      $('#susu-title, #total-payout, #duration, #contribution-period, #member-count').empty();
     }
   }
 
@@ -49,8 +49,9 @@ function displayTotalValue(susuValue) {
 }
 
 function clearCalculatedElements() {
-  $('#susu-title').empty();
+  $('#susu-title, #member-count').empty();
   $('#total-payout').empty();
   $('#duration').empty();
   $('#contribution-period').empty();
+  // $('#member-count').empty();
 }
