@@ -1,21 +1,17 @@
 %section
   %div
     - @susus.each do |susu|
-      .susu
-        .header
-          %span.susu-name
-            = susu.name
-          .pointer
-        .info
-          %p
-            = format_start_date(susu)
-          %p
-            = display_member_count(susu)
-          %p
-            = display_payout(susu)
-
-          %span.show-susu
-            = link_to 'Show', susu
-          %span= link_to 'Edit', edit_susu_path(susu)
-          %span= link_to 'Delete', susu, method: :delete, data: { confirm: 'Are you sure?' }
+      = link_to susu do
+        .susu
+          .header
+            %span.susu-name
+              = susu.name
+            .pointer
+          .info
+            %p
+              = format_start_date(susu)
+            %p
+              = display_member_count(susu)
+            %p
+              = display_payout(susu)
 %br/
