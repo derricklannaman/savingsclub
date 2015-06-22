@@ -32,26 +32,24 @@ function displayCalculatedResults(susuValue, contributeAmount, schedule, members
 }
 
 function displayNumberOfMembers(members) {
-  $('#member-count').append(members)
-
+  $('#member-count').append("<div>" + members + "</div>");
 }
 
 function displayContributionSchedule(contributeAmount, schedule) {
-  $('#contribution-period').append('$ ' + contributeAmount + schedule)
+  $('#contribution-period').append("<div> $" + contributeAmount + schedule + "</div>")
 }
 
 function displayTotalValue(susuValue) {
   var susuName = $('#susu_name').val(),
       value = accounting.formatMoney(susuValue);
   $('#total-payout').append("<div>" + susuName + "</div>")
-                      .append("<div>Total Payout:</div>")
-                        .append(value);
+                      .append(value);
 }
 
 function clearCalculatedElements() {
-  $('#susu-title, #member-count').empty();
+  $('#susu-title').empty();
   $('#total-payout').empty();
   $('#duration').empty();
   $('#contribution-period').empty();
-  // $('#member-count').empty();
+  $('#member-count').empty();
 }
